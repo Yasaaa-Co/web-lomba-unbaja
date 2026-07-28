@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Lomba Dies Natalis 15 UNBAJA</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Google untuk tipografi yang lebih modern -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Bagian Header (Logo & Judul) -->
+    <header>
+        <div class="logo-container">
+    <img src="asset/LOGO UNBAJA.png" alt="Logo UNBAJA" class="logo-img">
+    <img src="asset/LOGO 15 TAHUN UNBAJA.png" alt="Logo 15 Tahun" class="logo-img">
+</div>
+        <h1>Dies Natalis ke-15 <br><span>Universitas Banten Jaya</span></h1>
+        <p>Pilih kategori kompetisi di bawah ini untuk melihat detail persyaratan dan jadwal.</p>
+    </header>
+
+    <!-- Bagian Tombol Lomba -->
+    <main>
+        <div class="button-container">
+            <!-- Atribut data-poster menyimpan nama file gambar yang Anda berikan -->
+            <button class="btn-lomba" data-poster="asset/SPEECH ENGLISH COMP.jpeg">
+                Speech English Competition
+            </button>
+            <button class="btn-lomba" data-poster="asset/SOLO SINGER COMP.jpeg">
+                Solo Singer Competition
+            </button>
+            <button class="btn-lomba" data-poster="asset/KARYA TULIS ILMIAH.jpeg">
+                Karya Tulis Ilmiah
+            </button>
+            <button class="btn-lomba" data-poster="asset/VIDEO KREATIF.jpeg">
+                Video Kreatif
+            </button>
+            <button class="btn-lomba" data-poster="asset/DESAIN GRAFIS COMP.jpeg">
+                Desain Grafis
+            </button>
+        </div>
+    </main>
+
+    <!-- Area Modal Pop-up (Disembunyikan secara default) -->
+    <div id="posterModal" class="modal">
+        <span class="close-btn">&times;</span>
+        <img class="modal-content" id="imgPoster" alt="Poster Lomba">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
